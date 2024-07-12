@@ -1,0 +1,1 @@
+        <img class="im" src="https://nyc3.digitaloceanspaces.com/fcw-static-new/app/uploads/2019/09/23152710/Asset-2-1.svg" alt=""><p class="im2">Chat With Us!</p><p class="im3">i am fixed</p>

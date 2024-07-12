@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position`s</title>
+    <style>
+            /* position static (default), absolute, relative, Fixed, Sticky */
+        .container{
+            background-color: rgb(231 174 237);
+        }
+        .box{
+            /* display: inline-block; */
+            border: 2px solid black;
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+            position: static;
+        }
+        #box2{
+            background-color: yellow;
+            position: relative;
+            left: 150px;
+        }
+        #box3{
+            background-color: yellow;
+            position: absolute;
+            left: 50px;
+            bottom: 50px;
+        }
+        #box4{
+            background-color: yellow;
+            position: sticky;
+            top: 20px;
+            left: 500px;
+        }
+        .im{
+            border: 3px solid red;
+            height: 30px;
+            position: fixed;
+            right: 173px;
+            bottom: 58px;
+            background-color: yellow;
+        }
+        .im2{
+            background-color: yellow;
+            border: 3px solid red;
+            height: 30px;
+            position: fixed;
+            right: 71px;
+            bottom: 42px;
+        }
+        .im3{
+            background-color: yellow;
+            border: 3px solid red;
+            height: 30px;
+            position: fixed;
+            right: 139px;
+            bottom: 88px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="im" src="https://cdn.iconscout.com/icon/free/png-256/free-chat-2130787-1794829.png?f=webp&w=256" alt=""><p class="im2">Chat With Us!</p><p class="im3">i am fixed</p>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">i am relative</div>
+    <div class="box" id="box3">i am absolute</div>
+    <div class="box" id="box4">i am sticky</div>
+    <div class="box" id="box5">5</div>
+    <div class="box" id="box6">6</div>
+    <div class="box" id="box7">7</div>
+    <div class="box" id="box8">8</div>
+    <div class="box" id="box6">6</div>
+    <div class="box" id="box7">7</div>
+    <div class="box" id="box8">8</div>
+    <div class="box" id="box6">6</div>
+    <div class="box" id="box7">7</div>
+    <div class="box" id="box8">8</div>
+</div>
+</body>
+</html>
