@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        .itembox{
+            font-size: 50px;
+            text-align: center;
+            background-color: rgb(231, 48, 48);
+            color: white;
+            /* display: none; */
+        }
+
+        @media (max-width:300px){
+            #box-1{
+                display: block;
+                background-color: black;
+            }
+        }
+        @media (min-width:500px) and (max-width:700px) {
+            #box-2{
+                display: block;
+                color: black;
+                background-color: grey;
+            }
+        }
+        @media (min-width:700px) and (max-width:900px) {
+            #box-3{
+                display: block;
+                color: red;
+                background-color: green;
+            }
+        }
+        @media (min-width:900px) and (max-width:1200px) {
+            #box-4{
+                display: block;
+                color: white;
+                background-color: blue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+        <div class="itembox" id="box-1">This is Mobile</div>
+        <div class="itembox" id="box-2">This is Tablet</div>
+        <div class="itembox" id="box-3">This is Computer</div>
+        <div class="itembox" id="box-4">This is BigComputer</div>
+</body>
+</html>
