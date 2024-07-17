@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation And Keyfrem</title>
+    <style>
+        .container{
+            background-color: green;
+        }
+        .box{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            animation: vivek1;
+            animation-duration: 2s;
+            animation-iteration-count:  1;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in-out;
+            animation-delay: 3s;
+            animation-direction: alternate;
+            /* animation: vivek1 2s ease-in-out 2s 1 alternate alternate; */
+            /* animation: vivek 2s ease-in-out 2s 1 alternate alternate; */
+        }
+
+        @keyframes vivek1 {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            50%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 40px;
+                left: 500px;
+            }
+        }
+
+        @keyframes vivek{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">THIS IS BOX</div>
+    </div>
+</body>
+</html>
