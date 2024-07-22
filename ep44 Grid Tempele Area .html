@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid grid-template Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside' 
+            'footer footer footer footer';
+        }
+        .item{
+            border: 2px solid black;
+            background-color: red;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            home Service About Us Login 
+        </div>
+        <div id="section" class="item"> 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sunt voluptates necessitatibus natus quidem harum, nulla hic cupiditate quaerat amet debitis? Id, et soluta repellat quas consequuntur fugit veritatis dolores consectetur perspiciatis earum culpa ullam error quos facilis tenetur cum magnam eum suscipit praesentium corporis quia. Delectus consectetur sed enim ab! Voluptate architecto dolorum, aliquid saepe fuga amet dolores sunt accusamus libero nisi accusantium temporibus animi aut porro autem voluptatum, quam officia! Velit accusantium dolor inventore, alias est accusamus aut explicabo ea mollitia quidem ipsam error hic voluptas quo beatae quam eum. Ex, quod totam quia sit nemo optio voluptates?
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nobis odit libero ut autem fugiat ipsam possimus, delectus facilis voluptatum repellendus quaerat quae iure explicabo adipisci rem culpa non incidunt deserunt! Alias minima ducimus quod beatae quia! Tempora hic aliquid, soluta, quis ipsa delectus mollitia doloribus, beatae sapiente perspiciatis fugit qui nobis officia voluptates eveniet doloremque repudiandae quasi! Sunt voluptas recusandae quod inventore neque perspiciatis aliquam animi doloremque facilis odio. Provident quia magnam, harum eaque at, tenetur, cumque dignissimos blanditiis culpa excepturi iure sapiente quasi suscipit nisi. Nihil libero cupiditate officia dolore deleniti deserunt. Est neque similique assumenda reprehenderit libero.
+        </div>
+        <footer class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos illum pariatur officiis rerum cum facere modi molestiae vitae nemo facilis?
+        </footer>
+        <!-- <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        <div class="item">item-11</div>
+        <div class="item">item-12</div>
+        <div class="item">item-13</div>
+        <div class="item">item-14</div> -->
+    </div>
+</body>
+</html>

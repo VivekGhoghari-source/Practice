@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gtrid Media</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'nav nav nav nav'
+            'section section section aside';
+        }
+        .bdr{
+            border: 2px solid black;
+            background-color: red;
+            padding: 10px;
+        }
+
+        #nav{
+            grid-area: nav;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        @media only screen and (max-width:600px){
+            body{
+                background-color: red;
+            }
+            .container{
+            grid-template-areas: 
+            'nav'
+            'section'
+            'aside';
+        }
+        }
+        @media (min-width:600px) and (max-width:1200px) {
+            body{
+                background-color: green;
+            }
+            .container{
+            grid-template-areas: 
+            'nav nav section section'
+            'aside aside aside aside';
+        }
+        }
+        @media (min-width:1200px) and (max-width:2200px) {
+            body{
+                background-color: yellow;
+            }
+        }
+        @media (min-width:2200px){
+            body{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav id="nav" class="bdr">
+            home
+            about
+            contact
+        </nav>
+        <section id="section" class="bdr">
+            <h2>Learn css</h2>
+        </section>
+        <aside id="aside" class="bdr">
+            <h3>more about us</h3>
+        </aside>
+    </div>
+</body>
+</html>
